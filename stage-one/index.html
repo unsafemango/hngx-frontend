@@ -3,9 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Stage One</title>
   </head>
   <body>
-    <h1 data-testid="slackDisplayName">Yray Akemu</h1>
+    <div class="container">
+      <div class="user mb10">
+        <!-- Slack Display Name -->
+        <h1 data-testid="slackDisplayName">Yray Akemu</h1>
+
+        <!-- Slack Display Image -->
+        <div class="image">
+          <img
+            src="./images/pfp.png"
+            alt="yray"
+            data-testid="slackDisplayImage"
+          />
+        </div>
+      </div>
+
+      <div class="time">
+        <!-- Current Day of the week -->
+        <p id="day" class="mb10" data-testid="currentDayOfTheWeek"></p>
+
+        <!-- Current UTC Time -->
+        <p id="time" class="mb10" data-testid="currentUTCTime"></p>
+      </div>
+
+      <div class="track">
+        <p data-testid="myTrack" class="mb10">Track: Frontend</p>
+        <p class="mb10">
+          Github Link:
+          <a
+            data-testid="githubURL"
+            href="https://github.com/unsafemango/hngx-frontend/tree/main/stage-one"
+            >HNGx Frontend Stage One</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>

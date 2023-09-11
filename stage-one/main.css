@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #222;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.user {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.user h1 {
+  align-self: center;
+  font-size: 40px;
+}
+
+.user img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
